@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space Invaders Web3</title>
+  </head>
+  <body>
+    <div id="app">
+      <div id="login-screen" class="screen">
+        <h1>Space Invaders Web3</h1>
+        <button id="connect-wallet">Connect Wallet</button>
+        <p id="wallet-status"></p>
+      </div>
+      <div id="game-screen" class="screen">
+        <div id="game-stats">
+          <div id="score">Score: 0</div>
+          <div id="lives">Lives: 3</div>
+          <div id="wallet-address"></div>
+        </div>
+        <canvas id="game-canvas"></canvas>
+        <button id="restart-button" style="display: none;">Restart Game</button>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
